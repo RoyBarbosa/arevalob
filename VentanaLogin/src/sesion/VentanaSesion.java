@@ -81,18 +81,14 @@ public class VentanaSesion extends JFrame {
 		btnIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				List<String> Usuario = new ArrayList<String>();
-				Usuario.add("Arturo");
-				Usuario.add("Luis");
-				Usuario.add("Jason");
-				Usuario.add("Aaron");
-				Usuario.add("Fabian");
+				Usuario.add("Roy");
+				Usuario.add("Mau");
+				
 				
 				List<String> Contra = new ArrayList<String>();
-				Contra.add("cavazos19");
-				Contra.add("bakiardi00");
-				Contra.add("pcrota01");
-				Contra.add("peru2020");
-				Contra.add("crack10");
+				Contra.add("Roy12345");
+				Contra.add("Mau12345");
+				
 				if (Usuario.contains(txtUsuario.getText())&&Contra.contains(txtContra.getText())) {
 					JOptionPane.showMessageDialog(null, "Bienvenido al sistema " + txtUsuario.getText(), "Sesion Iniciada", JOptionPane.INFORMATION_MESSAGE);
 					Ventana2 g = new Ventana2();
@@ -101,7 +97,7 @@ public class VentanaSesion extends JFrame {
 					
 					
 				}else {
-					JOptionPane.showMessageDialog(null, "Usuario o Contraseña incorrecta", "Error",JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Usuario o ContraseÃ±a incorrecta", "Error",JOptionPane.ERROR_MESSAGE);
 				}
 				txtUsuario.setText("");
 				txtContra.setText("");
